@@ -3,7 +3,6 @@ import { Offcanvas } from 'react-bootstrap'
 import { routes } from 'constants/routesConstants'
 import { Dispatch, FC, SetStateAction, useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import React from 'react'
 
 interface ItemProps extends ISidebarItem {
   setOpen: Dispatch<SetStateAction<boolean>>

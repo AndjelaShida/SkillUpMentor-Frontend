@@ -18,7 +18,7 @@ export const register = async (data: RegisterUserFields) =>
   apiRequest<RegisterUserFields, void>('post', apiRoutes.SIGNUP, data)
 
 export const signout = async () =>
-  apiRequest<undefined, UserType>('get', apiRoutes.FETCH_USER)
+  apiRequest<undefined, void>('post', apiRoutes.SIGNOUT)
 
 export const uploadAavatar = async (formData: FormData, id: string) =>
   apiRequest<FormData, void>(
